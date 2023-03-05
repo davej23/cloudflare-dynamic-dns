@@ -1,0 +1,5 @@
+# Run DNS update script every hour
+0 * * * * python3 PATH_TO_UPDATE_DNS_SCRIPT
+
+# Clear root mail everyday
+0 0 * * *  cat /dev/null > /var/spool/mail/root 2>&1 > mailroot.log

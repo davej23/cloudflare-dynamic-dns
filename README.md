@@ -9,5 +9,6 @@ How to use:
 (Optional) To run this command every hour on a Linux system
 1. Run `crontab -e` on Linux system
 2. Enter this line at the end of the file `0 * * * * python3 PATH_TO_UPDATE_DNS_SCRIPT`
+3. If required, delete root user mail everyday using `0 0 * * *  cat /dev/null > /var/spool/mail/root 2>&1 > mailroot.log`
 
 **Please Note: `cloudflare.py` code from `cloudflare-ddns` Python library**
